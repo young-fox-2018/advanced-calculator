@@ -6,26 +6,32 @@ class Calculator {
       this.number = number
       this.pi = Math.PI
   }
+
   add(number) {
       this.number += number
       return this
   }
+
   subtract(number) {
       this.number -= number
       return this
   }
+
   multiply(number) {
       this.number *= number
       return this
   }
+  
   divide(number) {
       this.number /= number
       return this
   }
+  
   square() {
       this.number *= this.number
       return this
   }
+
   squareRoot () {
       this.number = Math.sqrt(this.number)
       return this
@@ -49,8 +55,6 @@ class Calculator {
     this.number = Math.pow(this.number,(1/number))
     return this
   }
-
-
 }
 
 /** note : you can use several features from ecmascript, such as:
