@@ -41,6 +41,10 @@ class Calculator {
     return this
   }
 
+  result2(){
+    console.log(this.result)
+  }
+
 }
 
 /** note : you can use several features from ecmascript, such as:

@@ -6,4 +6,4 @@ const Calculator = require("./calculator.js")
 
 const calculate = new Calculator(1)
 calculate.circle().add(2).multiply(1)
-console.log(calculate.result)
+calculate.result2()
