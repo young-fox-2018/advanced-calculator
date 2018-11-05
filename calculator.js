@@ -4,7 +4,10 @@ class Calculator {
   //write your code here
   constructor(number) {
       this.number = number
-      this.pi = Math.PI
+  }
+
+  pi(){
+      return Math.PI
   }
 
   add(number) {
@@ -48,11 +51,11 @@ class Calculator {
   }
 
   circleArea(radius){
-    this.number = Number((this.pi * radius * radius).toFixed(2))
+    this.number = Number((Math.PI * radius * radius).toFixed(2))
     return this
   }
 
-  getNumber(){
+  equal(){
     return this.number
   }
 
