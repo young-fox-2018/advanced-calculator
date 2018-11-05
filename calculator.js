@@ -31,9 +31,14 @@ class Calculator {
       this.number *= this.number
       return this
   }
-
+  
   squareRoot () {
       this.number = Math.sqrt(this.number)
+      return this
+    }
+    
+  nRoot(number){
+      this.number = (Math.pow(this.number,(1/number))).toFixed(2)
       return this
   }
 
@@ -51,10 +56,6 @@ class Calculator {
     return this.number
   }
 
-  nRoot(number){
-    this.number = Math.pow(this.number,(1/number))
-    return this
-  }
 }
 
 /** note : you can use several features from ecmascript, such as:
