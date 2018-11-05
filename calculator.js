@@ -30,8 +30,7 @@ class Calculator {
     return this;
   }
   pi () {
-    const pi = 22/7;
-    this.result = this.result * pi;
+    this.result *= Math.PI
     return this;
   }
 
