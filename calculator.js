@@ -41,6 +41,15 @@ class Calculator {
     return this
   }
 
+  getNumber(){
+    return this.number
+  }
+
+  nRoot(number){
+    this.number = Math.pow(this.number,(1/number))
+    return this
+  }
+
 
 }
 
