@@ -2,19 +2,41 @@
 
 class Calculator {
   //write your code here
-  constructor () {
+  constructor (number) {
+    this.number = number
   }
-  add () {
+  add (number) {
+    this.number = this.number + number
+    return this
   }
-  subtract () {
+  subtract (number) {
+    this.number = this.number - number
+    return this
   }
-  multiply () {
+  multiply (number) {
+    this.number = this.number * number
+    return this
   }
-  divide () {
+  divide (number) {
+    this.number = this.number / number
+    return this
   }
-  square () {
+  square (number) {
+    let temp = this.number
+
+    for (var i = 1; i < number; i++) {
+      this.number = this.number * temp
+    }
+    return this
   }
   squareRoot () {
+    this.number = Math.sqrt(this.number)
+    return this
+  }
+  phi () {
+    const phi = 22/7
+    this.number = this.number * phi
+    return this
   }
 }
 
