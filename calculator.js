@@ -4,7 +4,7 @@ class Calculator {
   //write your code here
   constructor (numInput) {
     this.res = numInput
-    this.pi = 22/7
+    this.pi = Math.PI
   }
 
   add (num2) {
@@ -38,8 +38,7 @@ class Calculator {
   }
   
   circleArea(){
-    const pi = this.pi 
-    this.res *= pi
+    this.res *= this.pi
     return this
   }
   
