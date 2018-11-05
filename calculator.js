@@ -20,7 +20,6 @@ class Calculator {
   divide(num) {
     this._number /= num
     return this
-
   }
   square(exponent) {
     let result = Math.pow(this._number, exponent)
@@ -34,8 +33,7 @@ class Calculator {
   }
   calculatePI() {
     let result = Math.PI
-    this._number = result
-    return this
+    return result
   }
 }
 
@@ -49,6 +47,8 @@ class Calculator {
 
 let calc = new Calculator()
 
-console.log(calc.add(20).subtract(10).multiply(3).divide(2).square(2).squareRoot())
+calc.add(20).subtract(10).multiply(3).divide(2).square(2).squareRoot()
+
+console.log(calc._number)
 
 module.exports = Calculator
