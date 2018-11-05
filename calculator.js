@@ -1,20 +1,48 @@
 'use strict'
 
 class Calculator {
-  //write your code here
-  constructor () {
+  constructor(initial_num = 1) {
+      // by default initial_num equals to one
+      this._num = initial_num
   }
-  add () {
+
+  add(num) {
+      this._num += num
+      return this
   }
-  subtract () {
+
+  subtract(num) {
+      this._num -= num
+      return this
   }
-  multiply () {
+
+  multiply(num) {
+      this._num *= num
+      return this
   }
-  divide () {
+
+  divide(num) {
+    this._num /= num
+    return this
   }
-  square () {
+
+  square(num) {
+      this._num = this._num ** num
+      return this
   }
-  squareRoot () {
+
+  squareRoot(num) {
+      this._num = this._num ** (1/num)
+      return this
+  }
+
+  areaOfCircle() {
+      this._num = (this._num ** 2) * (22/7)
+      return this
+  }   
+
+  value() {
+    console.log(this._num)
   }
 }
 
