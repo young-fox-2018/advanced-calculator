@@ -26,7 +26,7 @@ class Calculator {
       this.number /= number
       return this
   }
-  
+
   square() {
       this.number *= this.number
       return this
@@ -43,7 +43,7 @@ class Calculator {
   }
 
   circleArea(radius){
-    this.number = Math.round(this.pi * radius * radius)
+    this.number = Number((this.pi * radius * radius).toFixed(2))
     return this
   }
 
