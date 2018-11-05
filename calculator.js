@@ -40,6 +40,10 @@ class Calculator {
     this.result = this.result * 3.14
     return this
   }
+  
+  hasil(){
+    console.log(this.result)
+  }
 }
 
 /** note : you can use several features from ecmascript, such as:
