@@ -4,7 +4,6 @@ class Calculator {
   //write your code here
   constructor (number) {
     this.result = number
-    // this.result = 0
   }
   add (number) {
     this.result += number
@@ -30,9 +29,12 @@ class Calculator {
     return this
   }
   circle () {
-    const phi = 3.14
+    const phi = 22/7
     this.result *= (this.result * this.result * phi)
     return this
+  }
+  equal() {
+    return this.result
   }
 }
 
@@ -45,3 +47,4 @@ class Calculator {
 */
 
 module.exports = Calculator
+
