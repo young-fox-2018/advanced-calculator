@@ -37,8 +37,7 @@ class Calculator {
   }
 
   circle() {
-    this.result = this.result* 3.14
-    return this
+    return Math.PI
   }
 
   result2(){
