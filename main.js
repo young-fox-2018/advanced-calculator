@@ -1,11 +1,12 @@
 'use strict'
 
 const Calculator = require("./calculator.js")
-let calculator = new Calculator(9)
+let calculator = new Calculator('phi')
 
-calculator.squareRoot().add(100)
+calculator.multiply(10)
 
 console.log(calculator.getResult())
 
 
 // execute function on calculator.js in here
+  

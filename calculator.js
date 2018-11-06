@@ -2,7 +2,11 @@
 
 class Calculator {
   constructor (firstNumber) {
+    if (firstNumber == 'phi') {
+      this.result = this.phi
+    } else {
     this.result = firstNumber
+    }
   }
 
   getResult() {
@@ -43,6 +47,10 @@ class Calculator {
     this.result = Math.sqrt(this.result)
 
     return this
+  }
+
+  get phi() {
+    return Math.PI
   }
 }
 
